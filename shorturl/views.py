@@ -54,4 +54,3 @@ def open(request, pk):
         if i not in "'()":
             final_url += i
     return redirect(final_url)
-    # but i dont know why its working for return redirect(i)
