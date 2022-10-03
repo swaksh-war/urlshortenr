@@ -1,0 +1,14 @@
+<header class="site-header">
+    <div class="site-identity">
+      <h1><a href="{% url 'index' %}">Site Name</a></h1>
+    </div>  
+    <nav class="site-navigation">
+      <ul class="nav">
+        {% if request.user %}<li>{{user}}</li>{% endif %}
+        <li><a href="{% url 'register' %}">SignUp</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+        <li><a href="{% url 'create' %}">create</a></li>
+      </ul>
+    </nav>
+  </header>

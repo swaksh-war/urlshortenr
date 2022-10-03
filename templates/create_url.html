@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+<div>
+    <form action='' method='POST'>
+        {% csrf_token %}
+        <label for='longurl'>Enter url here:</label>
+        <input type='url' name='longurl'>
+        <button type='submit'>submit</button>
+    </form>
+</div>
+{% endblock content %}

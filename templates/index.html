@@ -1,0 +1,9 @@
+{% extends "main.html" %}
+{% block content %}
+<ul>
+    {% for url in urls %}
+    <p><a href="{{url.uuid}}">{{url.shortenurl}}</a></p>
+    
+    {% endfor %}
+</ul>
+{% endblock content %}
